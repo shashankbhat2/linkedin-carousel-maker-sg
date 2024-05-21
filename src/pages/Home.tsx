@@ -3,7 +3,7 @@ import { cardData } from '@/lib/routes'
 
 const Home = () => {
   return (
-    <div className='mx-4 md:container md:mx-auto flex flex-col gap-4 overflow-y-auto py-5'>
+    <div className='mx-4 flex flex-col gap-4 overflow-y-auto py-5'>
       <div className="flex flex-col gap-2 mt-4">
         <h1 className='text-xl font-medium'>Generate posts with AI</h1>
         <p className='text-sm'>Select a template to generate high-quality posts with AI</p>

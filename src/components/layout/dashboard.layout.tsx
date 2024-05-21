@@ -58,7 +58,7 @@ const DashboardLayout = ({ children }: Props) => {
                 </DropdownMenu>
             </header>
             <main className="flex flex-1 h-full md:my-0 pb-16 md:pb-0">
-                <div className="hidden bg-muted/40 md:flex flex-col justify-between gap-2 border-r">
+                <div className="hidden bg-muted/40 md:flex flex-col min-h-screen justify-between gap-2 border-r">
                     <div className="flex flex-col">
                         <div className="flex flex-col  flex-1 w-auto">
                             <nav className="flex gap-3  flex-col items-start text-sm font-medium">
