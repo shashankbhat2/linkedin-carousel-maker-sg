@@ -51,11 +51,11 @@ const CarouselEditor = ({ post }: Props) => {
           </TabsContent>
         </Tabs>
       </div>
-      <div className="flex flex-1 flex-grow md:basis-1/5 gap-2 flex-col overflow-hidden bg-slate-100 justify-center items-center">
-        <div className="flex w-auto">
+      <div className="flex flex-1 p-2 flex-grow md:basis-1/5 gap-2 flex-col overflow-hidden bg-slate-100 justify-center items-center">
+        <div className="flex my-2">
           <CarouselCanvas slide={post.template.carousel?.slides[currentSlide]!} commonSettings={post.template.carousel?.common_settings!} />
         </div>
-        <div className="flex items-center my-4 justify-center gap-4 font-semibold">
+        <div className="flex items-center my-2 justify-center gap-4 font-semibold">
           <Button disabled={currentSlide === 0 } variant="outline" onClick={handlePrevSlide} className='rounded-full'>
             <ArrowLeft size={24} />
           </Button>
