@@ -76,7 +76,7 @@ const CarouselEditorPage = () => {
           </Button>
         </div>
       </div>
-      <CarouselEditor id={post.id} />
+      <CarouselEditor post={post} />
     </div>
   )
 }

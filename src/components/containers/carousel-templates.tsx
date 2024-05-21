@@ -63,9 +63,9 @@ const CarouselTemplatesContainer = (props: Props) => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
                         {PRESETS.map((preset, i) => (
-                            <div key={i} onClick={() => handlePresetClick(preset)}>
+                            <button disabled={!preset.editable} key={i} onClick={() => handlePresetClick(preset)}>
                                 <CarouselCard template={preset} />
-                            </div>
+                            </button>
                         ))}
                     </div>
                 </div>

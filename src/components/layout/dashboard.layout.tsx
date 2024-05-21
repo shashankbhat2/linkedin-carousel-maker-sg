@@ -57,8 +57,8 @@ const DashboardLayout = ({ children }: Props) => {
                     </DropdownMenuContent>
                 </DropdownMenu>
             </header>
-            <main className="flex flex-1 h-full  min-h-screen">
-                <div className="hidden bg-muted/40 md:flex flex-col gap-2 border-r">
+            <main className="flex flex-1 h-full md:my-0 pb-16 md:pb-0">
+                <div className="hidden bg-muted/40 md:flex flex-col justify-between gap-2 border-r">
                     <div className="flex flex-col">
                         <div className="flex flex-col  flex-1 w-auto">
                             <nav className="flex gap-3  flex-col items-start text-sm font-medium">
@@ -96,8 +96,8 @@ const DashboardLayout = ({ children }: Props) => {
                         </Card>
                     </div>
                 </div>
-                <section className="flex flex-col w-full">
-                    <div className="flex py-3 px-2 w-full justify-center items-center gap-2 md:gap-4 text-sm font-medium border-b bg-slate-50">
+                <section className="flex flex-col w-full h-full">
+                    <div className="flex py-3 px-2 w-full justify-between md:justify-center items-center gap-2 md:gap-4 text-sm font-medium border-b bg-slate-50">
                         <Timer />
                         <span className='text-xs md:text-sm text-muted-foreground'>Your free trial ends in just 2 days</span>
                         <Button className='gap-2 w-auto p-2 text-xs rounded-full items-center justify-center'>
